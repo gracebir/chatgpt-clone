@@ -1,9 +1,13 @@
 import React from 'react'
+import Sidebar from './components/Sidebar'
 
 function App() {
   return (
-    <div>
-     
+    <div className='h-screen font-inter bg-[#282c34]'>
+      <Sidebar />
+      <div>
+
+      </div>
     </div>
   )
 }
