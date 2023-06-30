@@ -5,7 +5,7 @@ import { BsPlus, } from 'react-icons/bs'
 function Sidebar() {
     const [isOpen, setisOpen] = useState(false)
     return (
-        <aside className='bg-[#202123] lg:w-[226px] lg:h-screen w-full sticky h-auto py-3 text-white border-b lg:border-none border-gray-300 lg:px-4 px-0'>
+        <aside className='bg-[#202123] lg:w-[226px] lg:h-screen w-full sticky top-0 h-auto py-3 text-white border-b lg:border-none border-gray-500 lg:px-4 px-0'>
             <div className='flex lg:hidden w-full justify-between px-4'>
                 <span onClick={() => setisOpen(true)}>
                     <GiHamburgerMenu size={20} />
@@ -26,7 +26,7 @@ function Sidebar() {
                 </button>
             </div>
             {/* button for desktop view */}
-            <button className='flex gap-2 py-2 w-full px-4 border border-gray-500 rounded-md'>
+            <button className='lg:flex hidden gap-2 py-2 w-full px-4 border border-gray-500 rounded-md'>
                 <span><BsPlus size={20} /></span><span className='text-base font-medium'>New chat</span>
             </button>
         </aside>
